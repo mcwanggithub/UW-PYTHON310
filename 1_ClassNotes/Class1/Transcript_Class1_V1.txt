@@ -1,0 +1,92 @@
+[MUSIC PLAYING]
+
+What makes Python special?
+There are a lot of details that make Python such a readable, usable,
+and productive language.
+But the key thing that sets it apart is it
+is an interpreted, dynamically typed language.
+But what does that mean?
+Well, first to reference other programming languages,
+Python is not much like statically typed languages such as C, C++, C#, or Java.
+It's more like Ruby, LISP, Perl, or JavaScript.
+And what do these have in common?
+The biggest thing is dynamic typing.
+This means that variables are not declared to have a particular type.
+And that means that programs are both shorter and more flexible.
+And programs with less code have fewer bugs.
+I also mentioned that Python is interpreted.
+That means that there is no separate compiling, linking, or building steps.
+And that means the programming process is simpler and faster.
+So other not having actually declared types,
+what really is a dynamic language?
+Dynamic typing means that type checking and dispatch happen at runtime.
+So for example, if I type a simple expression like x=a+b,
+the interpreter when the code is running goes through a process something like
+this.
+What type of thing is a?
+What type of thing is b?
+What does it mean to add them?
+Then it can actually perform the addition and assign the new value to x.
+So importantly, both the type and the value of a and b can change at any time
+before this line of code is run.
+This makes the language very flexible.
+However, Python's endemic typing does not mean that it is weakly typed.
+In fact, values in Python are quite strongly typed.
+At any given moment a particular Python variable
+will be bound to a particular value.
+And that value has one and only one type.
+And that type can be checked at runtime.
+So for example, if I set a to the integer 5,
+now I can see what kind of type it is.
+And the interpreter tells me that it's an integer.
+But if I set b to a string that happens to contain the character for 5,
+now I ask what the type of b is, and it's shown as a string, the text type.
+So you can see though, even though b in this case
+holds text that happens to hold the digit 5, Python knows that it is text
+and not, in fact, a number.
+So every value in Python has a type.
+And the type of the value determines what it can do.
+Watch what happens when I try to add a and b as I just created them.
+
+So I get a type error.
+Python says it doesn't know how to--
+well, what it says is unsupported operand type for plus int and string.
+So what this means is that it doesn't know how to add an integer to string.
+That's a meaningless operation.
+Well a human could infer that I meant that the string with the digit 5 in it
+was to be interpreted as a number and thus give me 10.
+Python will not change types for you.
+In fact, Python has a philosophy language of sorts.
+It's known as the zen of Python.
+And one of its tenets is, in the face of ambiguity,
+refuse the temptation to guess.
+And that is exactly what is going on here.
+Python is refusing to guess.
+Despite this approach, Python's typing system is not rigid.
+For example, it's important to keep in mind that while values are strongly
+typed, names on the other hand are not.
+In statically typed language, in particular
+a name like b above is defined is always referring to a single type.
+Not so Python.
+For instance, with the previous code, I can simply
+redefine b to be an actual integer.
+So if I make b be the integer 5, now I can do my x equals a plus b.
+And Python knows how to add those two integers and give me 10.
+Python users or Pythonistas, as we are sometimes called,
+sometimes refer to Python's typing system as duck typing.
+This is taken from the old aphorism, if it looks like a duck,
+swims like a duck, and quacks like a duck, then it probably is a duck.
+Or in programming terms, if an object behaves as expected as runtime
+or quacks like a duck, then it is the right type
+and we can expect it to quack when we ask it to.
+Taking from the previous example, if an object
+knows how to add itself to a number, then Python will add it to the number.
+If this is a bit confusing, trust that it will all make more sense to you
+as you actually work with Python code.
+But what it does mean is that for the most part,
+Python code behaves pretty much as you expect it will.
+And you don't need to write a lot of extra code
+to explain to Python what you mean.
+In fact, some people call Python executable pseudocode.
+And dynamic typing is a big part of that.
+[MUSIC PLAYING]
